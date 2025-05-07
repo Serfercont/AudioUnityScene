@@ -18,7 +18,7 @@ namespace SojaExiles
         private AudioSource audioSource;
         
         // Footstep audio clips
-        public AudioClip[] gridFootsteps;
+        public AudioClip[] groundFootsteps;
         public AudioClip[] woodFootsteps;
         public AudioClip[] marbleFootsteps;
         public AudioClip[] rockFootsteps;
@@ -90,7 +90,7 @@ namespace SojaExiles
                 
                 if (hit.collider.CompareTag("Ground"))
                 {
-                    selectedFootsteps = gridFootsteps;
+                    selectedFootsteps = groundFootsteps;
                 }
                 else if (hit.collider.CompareTag("Marble"))
                 {
